@@ -1,0 +1,14 @@
+https://www.name.com/api-docs/URLForwardings#UpdateURLForwarding
+
+
+
+curl -u 'username:token' 'https://api.dev.name.com/v4/domains/example.org/url/forwarding/www.example.org' -X PUT --data '{"forwardsTo":"https:\/\/90.224.170.164:7777","type":"redirect"}'
+
+
+
+{
+    "domainName": "example.org",
+    "host": "www.example.org",
+    "forwardsTo": "https://www.example.net",
+    "type": "redirect"
+}	

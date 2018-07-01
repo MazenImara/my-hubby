@@ -1,0 +1,15 @@
+https://null-byte.wonderhowto.com/how-to/make-your-malicious-android-app-be-more-convincing-0163730/
+
+* Decompiling Your Apk
+
+apktool d /target.apk /destination
+
+
+* Compiling Your App
+
+apktool b /appfolder
+
+
+* sign apk
+
+java -jar signapk.jar certificate.pem key.pk8 your-app.apk your-app-signed.apk
